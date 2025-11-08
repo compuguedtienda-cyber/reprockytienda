@@ -72,7 +72,7 @@ img {
 .btn { 
     position: relative;
     text-decoration: none;
-    color:blue;
+    color:red;
     transition: color 350ms ease-in-out, background-color 350ms ease-in-out;
     animation: bouncy 3s infinite linear;
 }
@@ -125,7 +125,7 @@ padding-top: 52px;
     display: block;
     margin: 10px auto 0;
     border-radius: var(--border-radius-s);
-    background: blue;
+    background: red;
 }
 /* FIN CONTROLA LOS SUBTITULOS GENERAL*/
 
@@ -135,7 +135,7 @@ header {
     position: fixed;
     width: 100%;
     z-index: 5;
-    background: blue ;
+    background: red ;
 }
 
 header .navbar {
