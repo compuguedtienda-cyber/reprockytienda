@@ -39,7 +39,7 @@
 --border-radius-circle: 50%;
 
 /* Site max width */
---site-max-width: 1300px;
+--site-max-width: 1600px;
 }
 
 html {
@@ -387,7 +387,7 @@ header .navbar {
 .caja-banner-principal{
     /* background-color: yellow; */
     width: 100%;
-    max-width: 1200px; /*control ancho monitores grandes*/
+    max-width: 1600px; /*control ancho monitores grandes*/
     margin: 15px auto;
     display: flex;
     gap: 20px;
@@ -399,7 +399,7 @@ header .navbar {
     margin: auto;
     width: 100%;
     min-width: 320px;
-    max-width: 1100px;
+    max-width: 1600px;
     height: auto;
     position: relative;
 }
@@ -412,7 +412,10 @@ header .navbar {
 
 .derecha{
     width: 30rem;
-    height: 23rem;
+    height: auto;
+    padding-top: 0.2rem;
+    padding-bottom: 0.3rem;
+    /*controla tamaño de poster derecho*/
 }
 
 .caja-banner-principal .izquierda img{
@@ -428,64 +431,57 @@ header .navbar {
     width: 100%;
     height: 100%;
     /* object-fit: cover; */
-    
+    /* display: none; */
 }
 /* FIN BANNER */
 
 
-
-/* CATALOGO BOTON PDF------------*/
-
-#caja-section{
-  background: linear-gradient(rgba(0, 142, 99, 0.1), rgba(0, 0, 0, 0.1)), url(images/catalogo/fondo6.jpg) fixed center center;
-  background-size: cover;
-  padding: 15px 0 80px 0 ;
+/*CATALOGO*/
+#call-to-action {
+background-image: url("images/catalogo/1.jpg");
+background-size: cover;      /* ajusta la imagen */
+background-position: center; /* centra */
+background-repeat: no-repeat; 
+  padding: 50px 0;
+  margin-top: 1.5rem;
+  align-items: center;
+  text-align: center;
 }
 
-
-#caja-section h3 {
-  color: white;
+#call-to-action h3 {
+  color: #fff;
   font-size: 28px;
+  font-weight: 700;
+}
+
+#call-to-action p {
+  color: #fff;
+}
+
+#call-to-action .cta-btn {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
   font-weight: 500;
-  align-items: center;
-  text-align: center;   
-  padding-bottom: 3rem;
-}
-
-#caja-section p {
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 25px;
+  transition: 0.5s;
+  margin-top: 10px;
+  border: 2px solid blue;
+  background-color: blue;
   color: white;
-  align-items: center;
-  text-align: center;
-  font-size: 18px;
-  font-weight: 300;
-  padding-bottom: 2rem;
-  
 }
 
-.caja3 a{
-    padding: 15px 26px;
-    border: 2px solid transparent;
-    border-color: white;
-    color: white;
-    border-radius: 1.5rem;
-    background: blue;
-    font-weight: var(--font-weight-medium);
-}
-
-.caja3{
-    
-  align-items: center;
-  text-align: center;
-  margin: 0 auto;
-}
-
-.caja3 a:hover{
-  background: white;
-  border: 2px;
+#call-to-action .cta-btn:hover { /*color boton catalogo*/
+  background:white;
+  border: 2px solid white;
   color: blue;
-  border-color: blue;
 }
-/* FIN CATALOGO BOTON PDF ------------*/
+
+/*FIN CATALOGO*/
+
 
 /* CARRUSEL SERVICIOS */
 .caja-carrusel{
@@ -537,11 +533,6 @@ header .navbar {
 /* FIN CARRUSEL SERVICIOS */
 
 
-
-/* Testimonial Section Styling */
-/* .testimonials-section {
-    background:rgb(22, 211, 57);
-} */
 
 .testimonials-section .slider-wrapper {
     overflow: hidden;
@@ -822,10 +813,18 @@ header .navbar {
     justify-content: center;  /* Centra horizontalmente */
     align-items: center;      /* Centra verticalmente */
    margin: 0 auto;
-   width: 20rem;
+   width: 20rem; /*  */ 
+   
 }
 
 /* FIN CENTRAR IMAGEN DERECHA */
+
+
+.caja-banner-principal .izquierda{
+    display: none   ;
+   
+}
+
 
 
     .hero-section .section-content {
@@ -852,6 +851,9 @@ header .navbar {
     .banner-principal-section .caja-banner-principal{
     display: block;
 }
+
+
+
 
 /* .hero-section{
     display: block;
